@@ -2,17 +2,22 @@
 //  HomeView.swift
 //  Nike
 //
-//  Created by 임도협 on 2025-07-12.
+//  Created by Dohyeop Lim on 2025-07-12.
 //
 
 import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HomeHeader(title: "Discover")
-            
-            Spacer()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                HomeHeader(title: "Discover")
+                
+                HomeIntroImage()
+
+                HomeWhatsNew()
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }

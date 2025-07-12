@@ -2,7 +2,7 @@
 //  HomeHeader.swift
 //  Nike
 //
-//  Created by 임도협 on 2025-07-12.
+//  Created by Dohyeop Lim on 2025-07-12.
 //
 
 import SwiftUI
