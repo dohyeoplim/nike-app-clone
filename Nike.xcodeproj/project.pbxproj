@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9C4CA0C82E2267B300450429 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9C4CA0C72E2267B300450429 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9C4CA0972E224C6800450429 /* Nike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4CA0C72E2267B300450429 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -51,6 +56,7 @@
 				9C4CA0A72E224CB000450429 /* Core */,
 				9C4CA0A62E224CA600450429 /* Features */,
 				9C4CA0A52E224C7B00450429 /* Resources */,
+				9C4CA0C72E2267B300450429 /* README.md */,
 				9C4CA0982E224C6800450429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4CA0C82E2267B300450429 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
