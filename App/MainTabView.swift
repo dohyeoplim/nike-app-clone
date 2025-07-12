@@ -15,6 +15,10 @@ struct MainTabView: View {
             contentView
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea(.keyboard)
+                .safeAreaInset(edge: .bottom) {
+                    Spacer()
+                        .frame(height: 82)
+                }
             
             TabBarView(
                 selected: $coordinator.selected,
