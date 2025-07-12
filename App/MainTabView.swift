@@ -2,7 +2,7 @@
 //  MainTabView.swift
 //  Nike
 //
-//  Created by 임도협 on 2025-07-12.
+//  Created by Dohyeop Lim on 2025-07-12.
 //
 
 import SwiftUI
@@ -11,9 +11,10 @@ struct MainTabView: View {
     @StateObject private var coordinator = TabCoordinator()
 
     var body: some View {
-        VStack(spacing: 0) {
+        ZStack(alignment: .bottom) {
             contentView
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .ignoresSafeArea(.keyboard)
             
             TabBarView(
                 selected: $coordinator.selected,
@@ -41,4 +42,8 @@ struct MainTabView: View {
             fatalError("Unknown tab selection")
         }
     }
+}
+
+#Preview {
+    MainTabView()
 }
