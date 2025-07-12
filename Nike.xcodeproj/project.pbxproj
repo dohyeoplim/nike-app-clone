@@ -11,9 +11,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9C4CA0992E224C6800450429 /* Nike */ = {
+		9C4CA0992E224C6800450429 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Nike;
+			path = App;
+			sourceTree = "<group>";
+		};
+		9C4CA0A52E224C7B00450429 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C4CA0A62E224CA600450429 /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9C4CA0A72E224CB000450429 /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +47,10 @@
 		9C4CA08E2E224C6800450429 = {
 			isa = PBXGroup;
 			children = (
-				9C4CA0992E224C6800450429 /* Nike */,
+				9C4CA0992E224C6800450429 /* App */,
+				9C4CA0A72E224CB000450429 /* Core */,
+				9C4CA0A62E224CA600450429 /* Features */,
+				9C4CA0A52E224C7B00450429 /* Resources */,
 				9C4CA0982E224C6800450429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +79,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9C4CA0992E224C6800450429 /* Nike */,
+				9C4CA0992E224C6800450429 /* App */,
+				9C4CA0A52E224C7B00450429 /* Resources */,
+				9C4CA0A62E224CA600450429 /* Features */,
+				9C4CA0A72E224CB000450429 /* Core */,
 			);
 			name = Nike;
 			packageProductDependencies = (
