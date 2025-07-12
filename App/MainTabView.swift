@@ -35,13 +35,13 @@ struct MainTabView: View {
         case .home:
             HomeView()
         case .shop:
-            Text("Shop")
+            ShopView()
         case .favourites:
-            Text("Favourites")
+            FavouritesView()
         case .bag:
-            Text("Bag")
+            BagView()
         case .profile:
-            Text("Profile")
+            ProfileView()
         default:
             fatalError("Unknown tab selection")
         }
