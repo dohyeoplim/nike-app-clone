@@ -13,23 +13,7 @@ struct WhatsNewCarouselItem: View {
     let productPrice: String
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Image(productImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 314, height: 314)
-            
-            VStack(alignment: .leading, spacing: 16) {
-                Text(productName)
-                    .font(TextStyle.textMdMedium.font)
-                    .lineLimit(1)
-                
-                Text(productPrice)
-                    .font(TextStyle.textMdRegular.font)
-                    .foregroundStyle(Color.gray600)
-            }
-            .frame(maxWidth: 314, alignment: .leading)
-        }
+        CardWithImageAndTextsView(imageName: productImage, title: productName, subtitle: productPrice, size: .large)
     }
 }
 
