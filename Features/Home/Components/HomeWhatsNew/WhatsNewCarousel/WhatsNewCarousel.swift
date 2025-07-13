@@ -12,8 +12,6 @@ struct WhatsNewCarousel: View {
 
     var body: some View {
         let cardWidth: CGFloat = 319
-        let cardSpacing: CGFloat = 6
-        let leadingPadding: CGFloat = 24
         
         CarouselView(itemSpacing: 6, leadingPadding: 24) {
             ForEach(items, id: \.self) { index in

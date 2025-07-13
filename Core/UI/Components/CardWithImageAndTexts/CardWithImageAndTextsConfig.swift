@@ -22,19 +22,19 @@ struct CardSize {
     
     static let small = CardSize(
         imageSize: CGSize(width: 184, height: 184),
-        titleFont: TextStyle.textMdBold.font,
+        titleFont: TextStyle.textMdMedium.font,
         subtitleFont: TextStyle.textMdRegular.font,
     )
     
     static let medium = CardSize(
         imageSize: CGSize(width: 216, height: 216),
-        titleFont: TextStyle.textMdBold.font,
+        titleFont: TextStyle.textMdMedium.font,
         subtitleFont: TextStyle.textMdRegular.font,
     )
     
     static let large = CardSize(
         imageSize: CGSize(width: 314, height: 314),
-        titleFont: TextStyle.textMdBold.font,
+        titleFont: TextStyle.textMdMedium.font,
         subtitleFont: TextStyle.textMdRegular.font,
     )
 }

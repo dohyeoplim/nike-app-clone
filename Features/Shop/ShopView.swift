@@ -13,6 +13,8 @@ struct ShopView: View {
         VStack {
             ScrollView{
                 ShopViewCategorySelector(selectedCategory: $selectedCategory)
+                
+                ShopViewBestSellersView()
             }
         }
         .padding(.top, 20)

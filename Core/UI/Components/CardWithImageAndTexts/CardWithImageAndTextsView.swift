@@ -53,7 +53,7 @@ struct CardWithImageAndTextsView: View {
             .aspectRatio(contentMode: .fill)
             .frame(width: size.imageSize.width, height: size.imageSize.height)
             .background(Color.gray.opacity(0.1))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .clipShape(RoundedRectangle(cornerRadius: 4))
     }
     
     @ViewBuilder
