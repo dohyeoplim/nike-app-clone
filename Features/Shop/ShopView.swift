@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ShopView: View {
+    @State var selectedCategory: ShopViewCategory? = .men
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView{
+                ShopViewCategorySelector(selectedCategory: $selectedCategory)
+            }
+        }
+        .padding(.top, 20)
+        .navigationTitle("Shop")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Image(systemName: "magnifyingglass")
+            }
+        }
     }
 }
 
 #Preview {
-    ShopView()
+    ShopStack()
 }

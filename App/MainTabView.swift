@@ -35,7 +35,7 @@ struct MainTabView: View {
         case .home:
             HomeView()
         case .shop:
-            ShopView()
+            ShopStack()
         case .favourites:
             FavouritesView()
         case .bag:
