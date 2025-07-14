@@ -15,6 +15,13 @@ struct ShopView: View {
                 ShopCategorySelectorView(selectedCategory: $selectedCategory)
                 
                 ShopBestSellersView()
+                
+                
+                VStack(spacing: 4) {
+                    ShopBannerView(backgroundImage: "Shop/Banner/1", title: "New")
+                    ShopBannerView(backgroundImage: "Shop/Banner/2", title: "Featured")
+                }
+                .padding(.vertical, 20)
             }
         }
         .padding(.top, 20)
