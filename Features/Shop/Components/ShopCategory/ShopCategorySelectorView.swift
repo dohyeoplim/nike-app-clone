@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ShopViewCategorySelector: View {
+struct ShopCategorySelectorView: View {
     @Namespace private var underlineNamespace
-    @Binding var selectedCategory: ShopViewCategory?
+    @Binding var selectedCategory: ShopCategory?
     
     private let underlineHeight: CGFloat = 2
     private let spacing: CGFloat = 12
@@ -21,7 +21,7 @@ struct ShopViewCategorySelector: View {
                 .frame(height: 1)
 
             HStack(spacing: 32) {
-                ForEach(ShopViewCategory.allCases) { category in
+                ForEach(ShopCategory.allCases) { category in
                     Button {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
                             selectedCategory = category
@@ -50,6 +50,6 @@ struct ShopViewCategorySelector: View {
 }
 
 #Preview {
-    @Previewable @State var selectedCategory: ShopViewCategory? = .men
-    ShopViewCategorySelector(selectedCategory: $selectedCategory)
+    @Previewable @State var selectedCategory: ShopCategory? = .men
+    ShopCategorySelectorView(selectedCategory: $selectedCategory)
 }

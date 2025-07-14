@@ -1,5 +1,5 @@
 //
-//  ShopViewBestSellersView.swift
+//  ShopBestSellersView.swift
 //  Nike
 //
 //  Created by Dohyeop Lim on 2025-07-13.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShopViewBestSellersView: View {
+struct ShopBestSellersView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 28) {
             Text("Must-Haves, Best Sellers & More")
@@ -26,5 +26,5 @@ struct ShopViewBestSellersView: View {
 }
 
 #Preview {
-    ShopViewBestSellersView()
+    ShopBestSellersView()
 }

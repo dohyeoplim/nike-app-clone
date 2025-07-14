@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ShopView: View {
-    @State var selectedCategory: ShopViewCategory? = .men
+    @State var selectedCategory: ShopCategory? = .men
     var body: some View {
         VStack {
             ScrollView{
-                ShopViewCategorySelector(selectedCategory: $selectedCategory)
+                ShopCategorySelectorView(selectedCategory: $selectedCategory)
                 
-                ShopViewBestSellersView()
+                ShopBestSellersView()
             }
         }
         .padding(.top, 20)
